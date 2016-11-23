@@ -1,4 +1,5 @@
 import XLSX from 'xlsx'
+import request from 'request'
 import * as constants from './constants'
 import { cellHandler } from './cellHandler'
 import Cita from './cita'
@@ -21,7 +22,7 @@ for (let row = constants.startingRow; row < constants.rows - 380; row++) {
     userEmail:   buffer[0],
     placa:       buffer[1],
     vin:         buffer[2],
-    emailDealer: buffer[3],
+    dealerEmail: buffer[3],
     fecha:       buffer[4],
     hora:        "12:00:00"
   }

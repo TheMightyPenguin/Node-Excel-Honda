@@ -17,6 +17,7 @@
     "babel-preset-latest": "^6.16.0"
   },
   "dependencies": {
-    "babel-runtime": "^6.11.6"
+    "babel-runtime": "^6.11.6",
+    "request": "^2.79.0"
   }
 }
