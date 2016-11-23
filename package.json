@@ -1,0 +1,22 @@
+{
+  "name": "honda-NodeExcelDBLoader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-latest": "^6.16.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.11.6"
+  }
+}
