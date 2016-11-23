@@ -1,6 +1,7 @@
 import XLSX from 'xlsx'
 import * as constants from './constants'
 import { cellHandler } from './cellHandler'
+import Cita from './cita'
 
 const workbook = XLSX.readFile('recall_citas.xlsx')
 const sheetName = workbook.SheetNames[0]
@@ -16,4 +17,14 @@ for (let row = constants.startingRow; row < constants.rows - 380; row++) {
     buffer.push(cellHandler(cell, column));
   }
   console.log(buffer.join(", "))
+  let data = {
+    userEmail:   buffer[0],
+    placa:       buffer[1],
+    vin:         buffer[2],
+    emailDealer: buffer[3],
+    fecha:       buffer[4],
+    hora:        "12:00:00"
+  }
+  let cita = new Cita(data);
+  cita.save();
 }
